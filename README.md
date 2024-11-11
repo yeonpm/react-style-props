@@ -59,7 +59,7 @@ const StyledWrapper = styled("div")<any>`
 - `fullP`: Set width: 100% and height: 100%
 - `fullV`: Set width: 100vw and height: 100vh
 
-#### Margin & Padding Shortcuts
+#### Margin & Padding Props
 
 - `m`, `margin`: Set all margins
 - `mx`: Set horizontal margins (left & right)
@@ -70,7 +70,7 @@ const StyledWrapper = styled("div")<any>`
 - `py`: Set vertical padding
 - `pt`, `pr`, `pb`, `pl`: Set individual padding
 
-#### Text Styling
+#### Text Props
 
 - `fs`, `fontSize`: Set font size
 - `fw`, `fontWeight`: Set font weight
@@ -79,23 +79,20 @@ const StyledWrapper = styled("div")<any>`
 - `textRight`: Set text-align: right
 - `ellipsis`: Enable text ellipsis with overflow
 
-#### Mouse Interaction
+#### Mouse Interaction Props
 
 - `pointer`: Set cursor: pointer
 - `mouseCss`: Apply hover and active effects for mouse interaction
 
-#### Border
+#### Border Props
 
 - `round3`, `round4`, `round5`, `round8`: Preset border-radius values
 - `border`: Set border style
 - `borderRadius`: Set border radius
 
-#### Other Utilities
+#### Other Props
 
 - `none`: Set display: none
-- `opacity`: Set opacity
-- `zIndex`: Set z-index
-- `gap`: Set gap between flex items
 - `jc`: Set justify-content: center
 - `ac`: Set align-items: center
 - `mr0mlAuto`: Set margin-right: 0; margin-left: auto;
