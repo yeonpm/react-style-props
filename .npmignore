@@ -1,0 +1,6 @@
+src/
+examples/
+.gitignore
+.prettierrc
+tsconfig.json
+rollup.config.js 
