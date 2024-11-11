@@ -11,6 +11,7 @@ npm install react-style-props
 ## usage
 
 ```tsx
+// set up
 import { HtmlHTMLAttributes, ReactElement, Ref, forwardRef } from "react";
 import styled from "@emotion/styled";
 import { DefaultConfigType, seperateStyleString } from "react-style-props"; // add...(1)
@@ -34,6 +35,15 @@ export default Wrapper;
 const StyledWrapper = styled("div")<any>`
   ${({ css }) => css} // add...(5)
 `;
+```
+
+```tsx
+// use
+<Wrapper ac fullV>
+  <Txt fs={14} fw={700} mr0mlAuto mouseCss>
+    Hello
+  </Txt>
+</Wrapper>
 ```
 
 ## Supported props
