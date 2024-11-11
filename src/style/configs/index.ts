@@ -74,6 +74,7 @@ const defaultConfig = {
   display: (display: string) => `display:${display};`,
   fontFamily: (fontFamily: string) => `font-family:${fontFamily};`,
 
+  flexGrow: (flexGrow: numStr) => `flex-grow:${flexGrow};`,
   transform: (transform: string) => `transform: ${transform};`,
   transition: (transition: string) => `transition: ${transition};`,
   animation: (animation: string) => `animation: ${animation};`,

@@ -26,6 +26,7 @@ export interface DefaultConfigType
   mb0mtAuto?: boolean;
   /** display: flex; */
   flex?: boolean;
+  flexGrow?: numStr;
   /** flex: 1; */
   flex1?: boolean;
   flexNum?: number;
