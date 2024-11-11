@@ -1,1 +1,0 @@
-var n={background:function(n){return"background:".concat(n,";")},backgroundColor:function(n){return"background-color:".concat(n,";")},bg:function(n){return"background:".concat(n,";")},color:function(n){return"color:".concat(n,";")},white:function(){return"background:white;"},red:function(){return"background:red;"}};export{n as default};
