@@ -109,7 +109,7 @@ const $YourComponent = styled("div")<any>`
 - `mr0mlAuto`: Set margin-right: 0; margin-left: auto;
 - `ml0mrAuto`: Set margin-left: 0; margin-right: auto;
 
-**More props are available. See [src/index.ts](https://github.com/yeonpm/react-style-props/blob/main/src/style/configs/types/index.d.ts)**
+**More props are available. See [github: react-style-props ...types/index.d.ts](https://github.com/yeonpm/react-style-props/blob/main/src/style/configs/types/index.d.ts)**
 
 ## License
 
