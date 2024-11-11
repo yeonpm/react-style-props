@@ -1,15 +1,17 @@
-import {ColorConfigType} from './color';
-import {MarginConfigType} from './margin';
-import {PaddingConfigType} from './padding';
-import {SizeConfigType} from './size';
-import {BorderConfigType} from './border';
-import {ElementTypes, numStr} from './common';
-import {TextVariantType} from './text';
+import { ColorConfigType } from "./color";
+import { MarginConfigType } from "./margin";
+import { PaddingConfigType } from "./padding";
+import { SizeConfigType } from "./size";
+import { BorderConfigType } from "./border";
+import { ElementTypes, numStr } from "./common";
+import { TextVariantType } from "./text";
 
-// declare const picsso: PicssoElementTypes;
-// export default picsso;
-// declare module "react-picsso" {}
-export interface DefaultConfigType extends MarginConfigType, PaddingConfigType, SizeConfigType, BorderConfigType, ColorConfigType {
+export interface DefaultConfigType
+  extends MarginConfigType,
+    PaddingConfigType,
+    SizeConfigType,
+    BorderConfigType,
+    ColorConfigType {
   /** justify-content: center; Involves "display: flex;". */
   jc?: boolean;
   /** align-items: center; Involves "display: flex;". */
@@ -123,27 +125,50 @@ export interface DefaultConfigType extends MarginConfigType, PaddingConfigType, 
   gridRow?: string;
   columnGap?: string;
   rowGap?: string;
-  objectFit?: 'contain' | 'cover' | 'fill' | 'none' | 'scale-down';
+  objectFit?: "contain" | "cover" | "fill" | "none" | "scale-down";
   objectPosition?: string;
-  userSelect?: 'none' | 'auto' | 'text' | 'contain' | 'all';
-  pointerEvents?: 'auto' | 'none' | 'visiblePainted' | 'visibleFill' | 'visibleStroke' | 'visible' | 'painted' | 'fill' | 'stroke' | 'all' | 'inherit';
-  whiteSpace?: 'normal' | 'nowrap' | 'pre' | 'pre-wrap' | 'pre-line' | 'break-spaces';
-  wordBreak?: 'normal' | 'break-all' | 'keep-all' | 'break-word';
+  userSelect?: "none" | "auto" | "text" | "contain" | "all";
+  pointerEvents?:
+    | "auto"
+    | "none"
+    | "visiblePainted"
+    | "visibleFill"
+    | "visibleStroke"
+    | "visible"
+    | "painted"
+    | "fill"
+    | "stroke"
+    | "all"
+    | "inherit";
+  whiteSpace?:
+    | "normal"
+    | "nowrap"
+    | "pre"
+    | "pre-wrap"
+    | "pre-line"
+    | "break-spaces";
+  wordBreak?: "normal" | "break-all" | "keep-all" | "break-word";
   textOverflow?: string;
-  textTransform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase' | 'full-width' | 'full-size-kana';
+  textTransform?:
+    | "none"
+    | "capitalize"
+    | "uppercase"
+    | "lowercase"
+    | "full-width"
+    | "full-size-kana";
   textDecoration?: string;
   textShadow?: string;
   verticalAlign?: string;
-  visibility?: 'visible' | 'hidden' | 'collapse';
+  visibility?: "visible" | "hidden" | "collapse";
   willChange?: string;
-  scrollBehavior?: 'auto' | 'smooth';
+  scrollBehavior?: "auto" | "smooth";
   scrollSnapType?: string;
-  scrollSnapAlign?: 'none' | 'start' | 'end' | 'center';
+  scrollSnapAlign?: "none" | "start" | "end" | "center";
   aspectRatio?: string;
   fontStyle?: string;
 }
 
-export {numStr} from './common';
+export { numStr } from "./common";
 
 // /**
 //  * The css function allows embedding and processing CSS within JavaScript/TypeScript using template literals.
