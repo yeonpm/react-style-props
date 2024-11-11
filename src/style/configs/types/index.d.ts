@@ -5,7 +5,7 @@ import { SizeConfigType } from "./size";
 import { BorderConfigType } from "./border";
 import { ElementTypes, numStr } from "./common";
 import { TextVariantType } from "./text";
-import { cssConfigType } from "./css";
+import { CssConfigType } from "./css";
 
 export interface DefaultConfigType
   extends MarginConfigType,
