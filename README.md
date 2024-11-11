@@ -107,3 +107,9 @@ const $YourComponent = styled("div")<any>`
 - `ac`: Set align-items: center
 - `mr0mlAuto`: Set margin-right: 0; margin-left: auto;
 - `ml0mrAuto`: Set margin-left: 0; margin-right: auto;
+
+**More props are available. See [src/index.ts](./src/index.ts)**
+
+## License
+
+MIT
