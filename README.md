@@ -60,6 +60,7 @@ const $YourComponent = styled("div")<any>`
 - `between`: Enable flex with justify-content: space-between
 - `column`, `col`: Enable flex with flex-direction: column
 - `row`: Enable flex with flex-direction: row
+- `absolute`, `fixed`, `relative`, `sticky`: Set position
 
 #### Size Props
 

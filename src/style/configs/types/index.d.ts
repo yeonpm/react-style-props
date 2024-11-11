@@ -79,6 +79,11 @@ export interface DefaultConfigType
   cursor?: string;
   zIndex?: number;
 
+  absolute?: boolean;
+  fixed?: boolean;
+  relative?: boolean;
+  sticky?: boolean;
+
   // font
   headingXLarge36B?: boolean;
   headingLarge28B?: boolean;

@@ -118,6 +118,11 @@ const defaultConfig = {
   cursor: (value: string) => (value ? `cursor:${value};` : ""),
   zIndex: (value: string) => (value ? `z-index:${value};` : ""),
 
+  absolute: (absolute?: boolean) => (absolute ? "position:absolute;" : ""),
+  fixed: (fixed?: boolean) => (fixed ? "position:fixed;" : ""),
+  relative: (relative?: boolean) => (relative ? "position:relative;" : ""),
+  sticky: (sticky?: boolean) => (sticky ? "position:sticky;" : ""),
+
   mouseCss: (value: boolean) =>
     value === true
       ? x`
