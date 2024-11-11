@@ -1,6 +1,6 @@
 {
   "name": "react-style-props",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "React library for styling components with defined props",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
