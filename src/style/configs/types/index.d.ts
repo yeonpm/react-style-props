@@ -13,7 +13,7 @@ export interface DefaultConfigType
     SizeConfigType,
     BorderConfigType,
     ColorConfigType,
-    cssConfigType {
+    CssConfigType {
   /** justify-content: center; Involves "display: flex;". */
   jc?: boolean;
   /** align-items: center; Involves "display: flex;". */
