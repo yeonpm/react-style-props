@@ -2,4 +2,101 @@
 
 스타일 props를 사용하여 React 컴포넌트를 쉽게 스타일링할 수 있는 라이브러리입니다.
 
-## 설치
+## install
+
+```bash
+npm install react-style-props
+```
+
+## usage
+
+```tsx
+import { HtmlHTMLAttributes, ReactElement, Ref, forwardRef } from "react";
+import styled from "@emotion/styled";
+import { DefaultConfigType, seperateStyleString } from "react-style-props"; // add...(1)
+
+export interface WrapperInterface
+  extends HtmlHTMLAttributes<HTMLDivElement>,
+    DefaultConfigType {} // add...(2)
+
+const Wrapper = ({ children, ...props }: WrapperInterface): ReactElement => {
+  const { styleString, otherProps } = seperateStyleString(props); // add...(3)
+
+  return (
+    <StyledWrapper css={styleString} {...otherProps} {/** add...(4) */}>
+      {children}
+    </StyledWrapper>
+  );
+};
+
+export default Wrapper;
+
+const StyledWrapper = styled("div")<any>`
+  ${({ css }) => css} // add...(5)
+`;
+```
+
+## Supported props
+
+- All CSS properties are supported
+
+### Special Style Props
+
+#### Layout Props
+
+- `flex`: Enable flex display
+- `jc`: Enable flex and justify-content: center
+- `ac`: Enable flex and align-items: center
+- `between`: Enable flex with justify-content: space-between
+- `column`, `col`: Enable flex with flex-direction: column
+- `row`: Enable flex with flex-direction: row
+
+#### Size Props
+
+- `w`, `width`: Set element width
+- `h`, `height`: Set element height
+- `size`: Set both width and height (can use array [width, height] or widthHeight)
+- `fullP`: Set width: 100% and height: 100%
+- `fullV`: Set width: 100vw and height: 100vh
+
+#### Margin & Padding Shortcuts
+
+- `m`, `margin`: Set all margins
+- `mx`: Set horizontal margins (left & right)
+- `my`: Set vertical margins (top & bottom)
+- `mt`, `mr`, `mb`, `ml`: Set individual margins
+- `p`, `padding`: Set all padding
+- `px`: Set horizontal padding
+- `py`: Set vertical padding
+- `pt`, `pr`, `pb`, `pl`: Set individual padding
+
+#### Text Styling
+
+- `fs`, `fontSize`: Set font size
+- `fw`, `fontWeight`: Set font weight
+- `textCenter`: Set text-align: center
+- `textLeft`: Set text-align: left
+- `textRight`: Set text-align: right
+- `ellipsis`: Enable text ellipsis with overflow
+
+#### Mouse Interaction
+
+- `pointer`: Set cursor: pointer
+- `mouseCss`: Apply hover and active effects for mouse interaction
+
+#### Border
+
+- `round3`, `round4`, `round5`, `round8`: Preset border-radius values
+- `border`: Set border style
+- `borderRadius`: Set border radius
+
+#### Other Utilities
+
+- `none`: Set display: none
+- `opacity`: Set opacity
+- `zIndex`: Set z-index
+- `gap`: Set gap between flex items
+- `jc`: Set justify-content: center
+- `ac`: Set align-items: center
+- `mr0mlAuto`: Set margin-right: 0; margin-left: auto;
+- `ml0mrAuto`: Set margin-left: 0; margin-right: auto;
