@@ -1,3 +1,7 @@
+/**
+ * @description CSS template literal tag function
+ * @styled-components
+ */
 export default function x(
   strings: TemplateStringsArray,
   ...values: string[]
