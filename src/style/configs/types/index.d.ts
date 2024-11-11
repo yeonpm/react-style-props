@@ -5,13 +5,15 @@ import { SizeConfigType } from "./size";
 import { BorderConfigType } from "./border";
 import { ElementTypes, numStr } from "./common";
 import { TextVariantType } from "./text";
+import { cssConfigType } from "./css";
 
 export interface DefaultConfigType
   extends MarginConfigType,
     PaddingConfigType,
     SizeConfigType,
     BorderConfigType,
-    ColorConfigType {
+    ColorConfigType,
+    cssConfigType {
   /** justify-content: center; Involves "display: flex;". */
   jc?: boolean;
   /** align-items: center; Involves "display: flex;". */
