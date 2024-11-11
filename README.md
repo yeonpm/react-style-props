@@ -11,39 +11,39 @@ npm install react-style-props
 ## usage
 
 ```tsx
-// set up
+// set up YourComponent.tsx
 import { HtmlHTMLAttributes, ReactElement, Ref, forwardRef } from "react";
 import styled from "@emotion/styled";
 import { DefaultConfigType, seperateStyleString } from "react-style-props"; // add...(1)
 
-export interface WrapperInterface
+export interface YourComponentInterface
   extends HtmlHTMLAttributes<HTMLDivElement>,
     DefaultConfigType {} // add...(2)
 
-const Wrapper = ({ children, ...props }: WrapperInterface): ReactElement => {
+const YourComponent = ({ children, ...props }: YourComponentInterface): ReactElement => {
   const { styleString, otherProps } = seperateStyleString(props); // add...(3)
 
   return (
-    <StyledWrapper css={styleString} {...otherProps} {/** add...(4) */}>
+    <$YourComponent css={styleString} {...otherProps} {/** add...(4) */}>
       {children}
-    </StyledWrapper>
+    </$YourComponent>
   );
 };
 
-export default Wrapper;
+export default YourComponent;
 
-const StyledWrapper = styled("div")<any>`
+const $YourComponent = styled("div")<any>`
   ${({ css }) => css} // add...(5)
 `;
 ```
 
 ```tsx
 // use
-<Wrapper ac fullV>
-  <Txt fs={14} fw={700} mr0mlAuto mouseCss>
+<YourComponent ac fullV>
+  <YourTxt fs={14} fw={700} mr0mlAuto mouseCss>
     Hello
-  </Txt>
-</Wrapper>
+  </YourTxt>
+</YourComponent>
 ```
 
 ## Supported props
