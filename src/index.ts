@@ -1,6 +1,7 @@
 export { default as resolveProps } from "./style/resolveProps";
 export { default as x } from "./style/x";
 export { toPixel } from "./style/toPixel";
+export { default as defaultConfig } from "./style/configs";
 
 // types
 export type { DefaultConfigType } from "./style/configs/types";
