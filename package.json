@@ -1,6 +1,6 @@
 {
   "name": "react-style-props",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "React library for styling components with defined props",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -44,5 +44,12 @@
     "rollup-plugin-peer-deps-external": "2.2.4",
     "tslib": "2.8.1"
   },
-  "type": "module"
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  }
 }

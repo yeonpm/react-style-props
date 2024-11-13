@@ -16,16 +16,14 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        dir: "dist/cjs",
+        file: "dist/cjs/index.js",
         format: "cjs",
-        preserveModules: true,
-        preserveModulesRoot: "src",
+        sourcemap: true,
       },
       {
-        dir: "dist/esm",
+        file: "dist/esm/index.js",
         format: "esm",
-        preserveModules: true,
-        preserveModulesRoot: "src",
+        sourcemap: true,
       },
     ],
     plugins: [
