@@ -1,4 +1,4 @@
-export { default as seperateStyleString } from "./style/seperateStyleString";
+export { default as resolveProps } from "./style/resolveProps";
 export { default as x } from "./style/x";
 export { toPixel } from "./style/toPixel";
 

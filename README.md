@@ -14,14 +14,14 @@ npm install react-style-props
 // set up YourComponent.tsx
 import { HtmlHTMLAttributes, ReactElement, Ref, forwardRef } from "react";
 import styled from "@emotion/styled";
-import { DefaultConfigType, seperateStyleString } from "react-style-props"; // add...(1)
+import { DefaultConfigType, resolveProps } from "react-style-props"; // add...(1)
 
 export interface YourComponentInterface
   extends HtmlHTMLAttributes<HTMLDivElement>,
     DefaultConfigType {} // add...(2)
 
 const YourComponent = ({ children, ...props }: YourComponentInterface): ReactElement => {
-  const { styleString, otherProps } = seperateStyleString(props); // add...(3)
+  const { styleString, otherProps } = resolveProps(props); // add...(3)
 
   return (
     <$YourComponent css={styleString} {...otherProps} {/** add...(4) */}>

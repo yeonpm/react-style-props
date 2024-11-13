@@ -1,10 +1,7 @@
 import defaultConfig from "./configs";
 import { ConfigKeyType } from "./configs/types/common";
 
-export default function seperateStyleString(
-  props: any,
-  additionalConfig?: any
-) {
+export default function resolveProps(props: any, additionalConfig?: any) {
   const totalKeys: string[] = Object.keys(props) as string[];
   const targetConfig = { ...additionalConfig, ...defaultConfig };
   const configKeys = Object.keys(targetConfig) as (keyof ConfigKeyType)[];
