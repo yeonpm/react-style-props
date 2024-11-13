@@ -35,7 +35,6 @@ const defaultConfig = {
   overflow: (overflow: string) => `overflow:${overflow};`,
   overflowX: (overflowX: string) => `overflow-x:${overflowX};`,
   overflowY: (overflowY: string) => `overflow-y:${overflowY};`,
-  none: (none?: boolean) => (none ? "display:none;" : ""),
   gap: (gap: numStr) => `display:flex; gap:${toPixel(gap)};`,
   flexDirection: (flexDirection: string) => `flex-direction:${flexDirection};`,
   column: (column?: boolean) =>
@@ -123,6 +122,12 @@ const defaultConfig = {
   fixed: (fixed?: boolean) => (fixed ? "position:fixed;" : ""),
   relative: (relative?: boolean) => (relative ? "position:relative;" : ""),
   sticky: (sticky?: boolean) => (sticky ? "position:sticky;" : ""),
+
+  block: (block?: boolean) => (block ? "display:block;" : ""),
+  inlineBlock: (inlineBlock?: boolean) =>
+    inlineBlock ? "display:inline-block;" : "",
+  inline: (inline?: boolean) => (inline ? "display:inline;" : ""),
+  none: (none?: boolean) => (none ? "display:none;" : ""),
 
   mouseCss: (value: boolean) =>
     value === true

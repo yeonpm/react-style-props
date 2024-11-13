@@ -35,8 +35,6 @@ export interface DefaultConfigType
   overflow?: string;
   overflowX?: string;
   overflowY?: string;
-  /** display: none; */
-  none?: boolean;
   /** Equals to gap. Involves "display: flex;". */
   gap?: numStr;
   flexDirection?: string;
@@ -86,6 +84,15 @@ export interface DefaultConfigType
   fixed?: boolean;
   relative?: boolean;
   sticky?: boolean;
+
+  /** display: none; */
+  none?: boolean;
+  /** display: block; */
+  block?: boolean;
+  /** display: inline-block; */
+  inlineBlock?: boolean;
+  /** display: inline; */
+  inline?: boolean;
 
   // font
   headingXLarge36B?: boolean;
