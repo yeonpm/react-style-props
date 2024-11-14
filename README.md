@@ -104,8 +104,8 @@ const $YourComponent = styled("div")<any>`
 #### Other Props
 
 - `none`: Set display: none
-- `jc`: Set justify-content: center
-- `ac`: Set align-items: center
+- `jc`: Set justify-content: center with display: flex
+- `ac`: Set align-items: center with display: flex
 - `mr0mlAuto`: Set margin-right: 0; margin-left: auto;
 - `ml0mrAuto`: Set margin-left: 0; margin-right: auto;
 
