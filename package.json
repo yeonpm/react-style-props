@@ -1,6 +1,6 @@
 {
   "name": "react-style-props",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "React library for styling components with defined props",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -14,7 +14,11 @@
   ],
   "keywords": [
     "react",
+    "style",
+    "css",
     "typescript",
+    "javascript",
+    "props",
     "styling",
     "css-in-js",
     "props"
@@ -26,7 +30,18 @@
   "publishConfig": {
     "access": "public"
   },
-  "author": "yeonpmdevelop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeonpm/react-style-props.git"
+  },
+  "homepage": "https://github.com/yeonpm/react-style-props",
+  "bugs": {
+    "url": "https://github.com/yeonpm/react-style-props/issues"
+  },
+  "author": {
+    "name": "yeonpm",
+    "email": "yeonpmdevelop@gmail.com"
+  },
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.26.0",
