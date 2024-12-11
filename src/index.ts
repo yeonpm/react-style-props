@@ -11,4 +11,5 @@ export type { MarginConfigType } from "./style/configs/types/margin";
 export type { PaddingConfigType } from "./style/configs/types/padding";
 export type { SizeConfigType } from "./style/configs/types/size";
 export type { TextVariantType } from "./style/configs/types/text";
+export type { FontVariant } from "./style/configs/types/fontVariant";
 export type { ConfigKeyType, numStr } from "./style/configs/types/common";

@@ -6,6 +6,7 @@ import { BorderConfigType } from "./border";
 import { ElementTypes, numStr } from "./common";
 import { TextVariantType } from "./text";
 import { CssConfigType } from "./css";
+import { FontVariant } from "./fontVariant";
 
 export interface DefaultConfigType
   extends MarginConfigType,
@@ -61,15 +62,28 @@ export interface DefaultConfigType
   fontWeight?: numStr;
   /** Equals to font-weight. */
   fw?: numStr;
-  boxShadow?: string;
+  lineHeight?: numStr;
+  /** Equals to line-height. */
+  lh?: numStr;
+  fontFamily?: string;
+  /** Equals to font-family. */
+  ff?: string;
   letterSpacing?: numStr;
+  /** Equals to letter-spacing. */
+  ls?: numStr;
+  fontStyle?: string;
+  /** Equals to font-style. */
+  fst?: string;
+  fontVariant?: FontVariant;
+  /** Equals to font-variant. */
+  fv?: FontVariant;
+  boxShadow?: string;
   top?: numStr;
   left?: numStr;
   right?: numStr;
   bottom?: numStr;
   opacity?: numStr;
   display?: string;
-  fontFamily?: string;
   cursor?: string;
 
   // border radius
