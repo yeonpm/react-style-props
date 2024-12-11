@@ -74,8 +74,31 @@ export interface DefaultConfigType
   fontStyle?: string;
   /** Equals to font-style. */
   fst?: string;
+  /**
+   * @interface FontVariant | undefined
+   * @description
+   * Please define or set the CSS for font-size, font-weight, line-height, letter-spacing, font-family, and font-style as an object variable in advance for use.
+   * @example
+   * {
+   *  fontSize: 16,
+   *  fontWeight: 700,
+   *  lineHeight: 24,
+   *  letterSpacing: 0,
+   *  fontFamily: 'Arial',
+   *  fontStyle: 'normal'
+   * }
+   * or
+   * {
+   *  fs: 16,
+   *  fw: 700,
+   *  lh: 24,
+   *  ls: 0,
+   *  ff: 'Arial',
+   *  fst: 'normal'
+   * }
+   */
   fontVariant?: FontVariant;
-  /** Equals to font-variant. */
+  /** Equals to fontVariant(font-variant). */
   fv?: FontVariant;
   boxShadow?: string;
   top?: numStr;
