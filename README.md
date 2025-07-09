@@ -101,6 +101,82 @@ const $YourComponent = styled("div")<any>`
 - `border`: Set border style
 - `borderRadius`: Set border radius
 
+##### Font Style Classification
+
+###### Heading (for titles)
+
+- **Size**: 26px ~ 34px
+- **line-height**: 180%
+- **Purpose**: Page titles, section titles, main headings
+
+```typescript
+// 34px heading styles
+heading34B; // Bold (800)
+heading34SB; // SemiBold (700)
+heading34M; // Medium (600)
+heading34SM; // SemiMedium (500)
+heading34R; // Regular (400)
+heading34L; // Light (300)
+
+// 32px heading styles
+heading32B, heading32SB, heading32M, heading32SM, heading32R, heading32L;
+
+// 30px heading styles
+heading30B, heading30SB, heading30M, heading30SM, heading30R, heading30L;
+
+// 28px heading styles
+heading28B, heading28SB, heading28M, heading28SM, heading28R, heading28L;
+
+// 26px heading styles
+heading26B, heading26SB, heading26M, heading26SM, heading26R, heading26L;
+```
+
+###### Text (for body content)
+
+- **Size**: 8px ~ 24px
+- **line-height**: 160%
+- **Purpose**: Body text, button text, description text
+
+```typescript
+// 24px text styles
+text24B, text24SB, text24M, text24SM, text24R, text24L;
+
+// 22px text styles
+text22B, text22SB, text22M, text22SM, text22R, text22L;
+
+// 20px text styles
+text20B, text20SB, text20M, text20SM, text20R, text20L;
+
+// 18px text styles
+text18B, text18SB, text18M, text18SM, text18R, text18L;
+
+// 16px text styles (default body)
+text16B, text16SB, text16M, text16SM, text16R, text16L;
+
+// 14px text styles
+text14B, text14SB, text14M, text14SM, text14R, text14L;
+
+// 12px text styles
+text12B, text12SB, text12M, text12SM, text12R, text12L;
+
+// 10px text styles
+text10B, text10SB, text10M, text10SM, text10R, text10L;
+
+// 8px text styles
+text8B, text8SB, text8M, text8SM, text8R, text8L;
+```
+
+##### Font Weight
+
+Each size provides 6 different weights:
+
+- **B (Bold)**: 800 - Boldest text, for emphasis
+- **SB (SemiBold)**: 700 - Bold text, for subtitles
+- **M (Medium)**: 600 - Medium weight, for emphasized text
+- **SM (SemiMedium)**: 500 - Slightly bold text
+- **R (Regular)**: 400 - Default weight, for body text
+- **L (Light)**: 300 - Light text, for additional information
+
 #### Other Props
 
 - `none`: Set display: none

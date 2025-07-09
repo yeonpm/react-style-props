@@ -2,6 +2,7 @@ export { default as resolveProps } from "./style/resolveProps";
 export { default as x } from "./style/x";
 export { toPixel } from "./style/toPixel";
 export { default as defaultConfig } from "./style/configs";
+export { fontVariants } from "./const/fontVariant";
 
 // types
 export type { DefaultConfigType } from "./style/configs/types";
@@ -10,6 +11,5 @@ export type { ColorConfigType } from "./style/configs/types/color";
 export type { MarginConfigType } from "./style/configs/types/margin";
 export type { PaddingConfigType } from "./style/configs/types/padding";
 export type { SizeConfigType } from "./style/configs/types/size";
-export type { TextVariantType } from "./style/configs/types/text";
-export type { FontVariant } from "./style/configs/types/fontVariant";
+export type { FontVariantType } from "./style/configs/types/fontVariant";
 export type { ConfigKeyType, numStr } from "./style/configs/types/common";

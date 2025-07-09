@@ -4,11 +4,9 @@ import colorConfig from "./color";
 import marginConfig from "./margin";
 import paddingConfig from "./padding";
 import sizeConfig from "./size";
-import textConfig from "./text";
 import { toPixel } from "../toPixel";
 import x from "../x";
 import cssConfig from "./css";
-import { FontVariant } from "./types/fontVariant";
 
 const defaultConfig = {
   ...cssConfig,
@@ -18,7 +16,6 @@ const defaultConfig = {
   ...marginConfig,
   ...paddingConfig,
   ...sizeConfig,
-  ...textConfig,
 
   jc: (jc?: boolean) => (jc ? "display:flex; justify-content:center;" : ""),
   ac: (ac?: boolean) => (ac ? "display:flex; align-items:center;" : ""),
@@ -154,39 +151,6 @@ const defaultConfig = {
   lh: (lineHeight: numStr) => `line-height:${toPixel(lineHeight)};`,
   ff: (fontFamily: string) => `font-family:${fontFamily};`,
   fst: (fontStyle: string) => `font-style:${fontStyle};`,
-
-  fontVariant: (variant: FontVariant) => {
-    let css = "";
-    if (variant.fontSize || variant.fs)
-      css += `font-size:${toPixel(variant.fontSize || variant.fs)};`;
-    if (variant.fontWeight || variant.fw)
-      css += `font-weight:${variant.fontWeight || variant.fw};`;
-    if (variant.lineHeight || variant.lh)
-      css += `line-height:${toPixel(variant.lineHeight || variant.lh)};`;
-    if (variant.letterSpacing || variant.ls)
-      css += `letter-spacing:${toPixel(variant.letterSpacing || variant.ls)};`;
-    if (variant.fontFamily || variant.ff)
-      css += `font-family:${variant.fontFamily || variant.ff};`;
-    if (variant.fontStyle || variant.fst)
-      css += `font-style:${variant.fontStyle || variant.fst};`;
-    return css;
-  },
-  fv: (variant: FontVariant) => {
-    let css = "";
-    if (variant.fontSize || variant.fs)
-      css += `font-size:${toPixel(variant.fontSize || variant.fs)};`;
-    if (variant.fontWeight || variant.fw)
-      css += `font-weight:${variant.fontWeight || variant.fw};`;
-    if (variant.lineHeight || variant.lh)
-      css += `line-height:${toPixel(variant.lineHeight || variant.lh)};`;
-    if (variant.letterSpacing || variant.ls)
-      css += `letter-spacing:${toPixel(variant.letterSpacing || variant.ls)};`;
-    if (variant.fontFamily || variant.ff)
-      css += `font-family:${variant.fontFamily || variant.ff};`;
-    if (variant.fontStyle || variant.fst)
-      css += `font-style:${variant.fontStyle || variant.fst};`;
-    return css;
-  },
 } as ConfigKeyType;
 
 export default defaultConfig;

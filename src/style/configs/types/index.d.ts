@@ -4,9 +4,8 @@ import { PaddingConfigType } from "./padding";
 import { SizeConfigType } from "./size";
 import { BorderConfigType } from "./border";
 import { ElementTypes, numStr } from "./common";
-import { TextVariantType } from "./text";
 import { CssConfigType } from "./css";
-import { FontVariant } from "./fontVariant";
+import { FontVariantType } from "./fontVariant";
 
 export interface DefaultConfigType
   extends MarginConfigType,
@@ -14,6 +13,7 @@ export interface DefaultConfigType
     SizeConfigType,
     BorderConfigType,
     ColorConfigType,
+    FontVariantType,
     CssConfigType {
   /** justify-content: center; Involves "display: flex;". */
   jc?: boolean;
@@ -130,37 +130,6 @@ export interface DefaultConfigType
   inlineBlock?: boolean;
   /** display: inline; */
   inline?: boolean;
-
-  // font
-  headingXLarge36B?: boolean;
-  headingLarge28B?: boolean;
-  headingMedium24B?: boolean;
-  headingMedium24Sb?: boolean;
-  headingSmall20B?: boolean;
-  headingSmall20Sb?: boolean;
-  subHeadingXLarge18B?: boolean;
-  subHeadingXLarge18Sb?: boolean;
-  subHeadingLarge16B?: boolean;
-  subHeadingLarge16Sb?: boolean;
-  subHeadingLarge16M?: boolean;
-  subHeadingMedium14B?: boolean;
-  subHeadingMedium14Sb?: boolean;
-  subHeadingMedium14M?: boolean;
-  subHeadingSmall12B?: boolean;
-  subHeadingSmall12Sb?: boolean;
-  subHeadingSmall12M?: boolean;
-  subHeadingXSmall10B?: boolean;
-  subHeadingXSmall10Sb?: boolean;
-  bodyLarge16Sb?: boolean;
-  bodyLarge16R?: boolean;
-  bodyMedium14B?: boolean;
-  bodyMedium14Sb?: boolean;
-  bodyMedium14R?: boolean;
-  bodySmall12B?: boolean;
-  bodySmall12Sb?: boolean;
-  bodySmall12R?: boolean;
-  bodyXSmall10B?: boolean;
-  bodyXSmall10R?: boolean;
 
   mouseCss?: boolean;
 
