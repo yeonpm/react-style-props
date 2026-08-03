@@ -6,6 +6,7 @@ import { BorderConfigType } from "./border";
 import { ElementTypes, numStr } from "./common";
 import { CssConfigType } from "./css";
 import { FontVariantType } from "./fontVariant";
+import { LegacyFontTokenType } from "./text";
 
 export interface DefaultConfigType
   extends MarginConfigType,
@@ -133,9 +134,41 @@ export interface DefaultConfigType
   /** display: inline; */
   inline?: boolean;
 
+  // legacy font helpers (react-style-props 1.0.x)
+  headingXLarge36B?: boolean;
+  headingLarge28B?: boolean;
+  headingMedium24B?: boolean;
+  headingMedium24Sb?: boolean;
+  headingSmall20B?: boolean;
+  headingSmall20Sb?: boolean;
+  subHeadingXLarge18B?: boolean;
+  subHeadingXLarge18Sb?: boolean;
+  subHeadingLarge16B?: boolean;
+  subHeadingLarge16Sb?: boolean;
+  subHeadingLarge16M?: boolean;
+  subHeadingMedium14B?: boolean;
+  subHeadingMedium14Sb?: boolean;
+  subHeadingMedium14M?: boolean;
+  subHeadingSmall12B?: boolean;
+  subHeadingSmall12Sb?: boolean;
+  subHeadingSmall12M?: boolean;
+  subHeadingXSmall10B?: boolean;
+  subHeadingXSmall10Sb?: boolean;
+  bodyLarge16Sb?: boolean;
+  bodyLarge16R?: boolean;
+  bodyMedium14B?: boolean;
+  bodyMedium14Sb?: boolean;
+  bodyMedium14R?: boolean;
+  bodySmall12B?: boolean;
+  bodySmall12Sb?: boolean;
+  bodySmall12R?: boolean;
+  bodyXSmall10B?: boolean;
+  bodyXSmall10R?: boolean;
+
   mouseCss?: boolean;
 
-  font?: TextVariantType;
+  /** legacy: font('Body/Large-16R') 등 */
+  font?: LegacyFontTokenType;
 
   transform?: string;
   transition?: string;

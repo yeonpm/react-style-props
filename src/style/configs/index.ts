@@ -4,6 +4,7 @@ import colorConfig from "./color";
 import marginConfig from "./margin";
 import paddingConfig from "./padding";
 import sizeConfig from "./size";
+import textConfig from "./text";
 import { toPixel } from "../toPixel";
 import x from "../x";
 import cssConfig from "./css";
@@ -16,6 +17,8 @@ const defaultConfig = {
   ...marginConfig,
   ...paddingConfig,
   ...sizeConfig,
+  // 레거시 폰트 API (bodyLarge16R, font('Body/...') 등) — 1.0.x 호환
+  ...textConfig,
 
   jc: (jc?: boolean) => (jc ? "display:flex; justify-content:center;" : ""),
   ac: (ac?: boolean) => (ac ? "display:flex; align-items:center;" : ""),
