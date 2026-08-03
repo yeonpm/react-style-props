@@ -30,6 +30,8 @@ export interface DefaultConfigType
   /** display: flex; */
   flex?: boolean;
   flexGrow?: numStr;
+  /** flex-shrink */
+  flexShrink?: numStr;
   /** flex: 1; */
   flex1?: boolean;
   flexNum?: number;

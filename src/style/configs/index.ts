@@ -72,6 +72,7 @@ const defaultConfig = {
   fontFamily: (fontFamily: string) => `font-family:${fontFamily};`,
 
   flexGrow: (flexGrow: numStr) => `flex-grow:${flexGrow};`,
+  flexShrink: (flexShrink: numStr) => `flex-shrink:${flexShrink};`,
   transform: (transform: string) => `transform: ${transform};`,
   transition: (transition: string) => `transition: ${transition};`,
   animation: (animation: string) => `animation: ${animation};`,
