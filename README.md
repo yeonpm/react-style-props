@@ -2,6 +2,8 @@
 
 Style your React components using defined style props easily.
 
+Official docs: [react-style-props.vercel.app](https://react-style-props.vercel.app)
+
 ## install
 
 ```bash
